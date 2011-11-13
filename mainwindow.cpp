@@ -109,7 +109,7 @@ bool MainWindow::saveFile(const QString &fileName)
     }
 
     ui->statusBar->showMessage(tr("File %1 saved").arg(fileName),2000);
-    return true;	//状态栏显示“File $fileName saved”,延时2000ms
+    return true; 	//状态栏显示“File $fileName saved”,延时2000ms
 }
 
 bool MainWindow::saveAs()
