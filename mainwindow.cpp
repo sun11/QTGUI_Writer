@@ -2,8 +2,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-
-
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -110,9 +108,8 @@ bool MainWindow::saveFile(const QString &fileName)
         file.close();
     }
 
-
     ui->statusBar->showMessage(tr("File %1 saved").arg(fileName),2000);
-    return true;
+    return true;	//状态栏显示“File $fileName saved”,延时2000ms
 }
 
 bool MainWindow::saveAs()
